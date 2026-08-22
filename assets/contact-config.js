@@ -1,5 +1,4 @@
 window.VENDISYN_CONTACT_CONFIG = {
-  endpoint: "/api/v1/public/contact",
+  endpoint: "https://formspree.io/f/mwlezrpv",
   turnstileSiteKey: ""
 };
-

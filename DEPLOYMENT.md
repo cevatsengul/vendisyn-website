@@ -1,35 +1,21 @@
-# Hetzner Yayın Notları
+# GitHub Pages Yayın Notları
 
 ## Statik Site
 
-Bu klasörün içeriği alan adının Nginx web köküne yüklenir. Varsayılan giriş dosyası `index.html` olmalıdır.
+Site `cevatsengul/vendisyn-website` repository’sinin `main` dalından GitHub Pages üzerinde yayınlanır. Varsayılan giriş dosyası `index.html`, özel alan adı `vendisyn.com` olmalıdır.
 
-## Güvenli İletişim Formu
+## İletişim Formu
 
-Form istekleri aynı alan adındaki aşağıdaki adrese gönderilir:
+İletişim formu JavaScript üzerinden Formspree’ye JSON isteği gönderir. Form uç noktası `assets/contact-config.js` dosyasındaki `endpoint` alanında tanımlanır.
 
-`POST /api/v1/public/contact`
+Alıcı e-posta adresi yalnızca Formspree panelinde tutulur; HTML ve JavaScript dosyalarına yazılmaz. Formspree panelinde alan adı kısıtlaması ve spam koruması etkinleştirilmelidir.
 
-Nginx üzerinde `/api/` istekleri VENDISYN Laravel backend uygulamasına yönlendirilmelidir. Backend tarafında aşağıdaki ortam değerleri tanımlanır:
+## Yayın Sonrası Kontrol
 
-```env
-CONTACT_RECIPIENT_ADDRESS=
-CONTACT_TURNSTILE_ENABLED=true
-CONTACT_TURNSTILE_SECRET_KEY=
-```
-
-E-posta teslimi Laravel'in standart `MAIL_*` ortam ayarları üzerinden yapılır. Sağlayıcı kod içinde sabitlenmemiştir.
-
-Cloudflare Turnstile herkese açık site anahtarı `assets/contact-config.js` içindeki `turnstileSiteKey` alanına yazılır. Gizli Turnstile anahtarı hiçbir zaman web dosyalarına eklenmez.
-
-## Yayın Öncesi Kontrol
-
-- Alan adı ve HTTPS yönlendirmesi
-- Nginx web kökü ve `index.html`
-- `/api/` reverse proxy yönlendirmesi
-- Turnstile site ve gizli anahtarları
-- `CONTACT_RECIPIENT_ADDRESS`
-- Laravel `MAIL_*` ayarları
-- SPF, DKIM ve DMARC kayıtları
-- İletişim formu gönderim testi
-
+- `vendisyn.com` ve `www.vendisyn.com` erişimi
+- HTTPS sertifikası
+- Masaüstü ve mobil görünüm
+- Dil seçimi ve dile bağlı ürün ekranları
+- Form doğrulaması
+- Formspree üzerinden kontrollü test gönderimi
+- Gmail teslimi ve spam klasörü kontrolü

@@ -21,6 +21,6 @@ Klasör içinde basit bir statik web sunucusu çalıştırın ve `index.html` ad
 
 ## Yapılandırma Notu
 
-Yayın alan adı `vendisyn.com` olarak belirlenmiştir. Gerçek iletişim alıcısı yalnız Hetzner üzerindeki `CONTACT_RECIPIENT_ADDRESS` ortam değişkeninde tutulur; web dosyalarına yazılmaz.
+Yayın alan adı `vendisyn.com` olarak belirlenmiştir. İletişim formu, alıcı e-posta adresini HTML içinde yayımlamadan Formspree uç noktasına gönderim yapar. Form uç noktası `assets/contact-config.js` dosyasında yapılandırılır.
 
-Cloudflare Turnstile site anahtarı yayın öncesinde `assets/contact-config.js` dosyasına, gizli anahtar ise yalnız backend ortamına eklenmelidir.
+İstenirse Formspree panelinden ek spam koruması ve alan adı kısıtlamaları etkinleştirilebilir.
