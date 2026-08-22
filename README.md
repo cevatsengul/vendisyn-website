@@ -21,6 +21,6 @@ Klasör içinde basit bir statik web sunucusu çalıştırın ve `index.html` ad
 
 ## Yapılandırma Notu
 
-Alan adı mevcut talebe göre `vendisiyn.com` olarak kabul edilmiştir. Gerçek iletişim alıcısı yalnız Hetzner üzerindeki `CONTACT_RECIPIENT_ADDRESS` ortam değişkeninde tutulur; web dosyalarına yazılmaz.
+Yayın alan adı `vendisyn.com` olarak belirlenmiştir. Gerçek iletişim alıcısı yalnız Hetzner üzerindeki `CONTACT_RECIPIENT_ADDRESS` ortam değişkeninde tutulur; web dosyalarına yazılmaz.
 
 Cloudflare Turnstile site anahtarı yayın öncesinde `assets/contact-config.js` dosyasına, gizli anahtar ise yalnız backend ortamına eklenmelidir.
