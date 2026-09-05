@@ -37,6 +37,11 @@ button, select { font: inherit; }
 .brand-copy strong { font-size: 14px; letter-spacing: .18em; }
 .brand-copy strong { color: white; }
 .brand-copy small { margin-top: 5px; color: #9eb4c2; font-size: 9px; letter-spacing: .03em; }
+.brand-descriptor { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px; }
+.ai-signature { display: inline-flex; direction: ltr; white-space: nowrap; }
+.ai-star, .ai-text { color: var(--aqua); }
+.ai-text { font-weight: 800; font-style: italic; }
+.native-text { color: inherit; }
 .nav-links { display: flex; align-items: center; gap: 26px; font-size: 14px; font-weight: 650; }
 .nav-links a { color: #bdccd5; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { color: white; }
@@ -217,7 +222,8 @@ h3 { margin-bottom: 10px; font-size: 21px; }
   .container { width: min(calc(100% - 28px), var(--max)); }
   .nav { min-height: 78px; }
   .brand img { width: 43px; }
-  .brand-copy small { display: none; }
+  .brand-copy strong { font-size: 12px; }
+  .brand-copy small { display: flex; max-width: 155px; font-size: 8px; line-height: 1.2; }
   .language-select { width: 68px; padding: 8px; }
   .hero { padding: 72px 0 58px; }
   .page-hero { padding: 66px 0 52px; }

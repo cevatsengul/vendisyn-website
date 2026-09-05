@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    navHome: "Home", navPlatform: "Platform", navHow: "How it works", navContact: "Contact", navTalk: "Talk to us",
+    navHome: "Home", navPlatform: "Platform", navHow: "How it works", navContact: "Contact", navTalk: "Talk to us", brandDescriptor: "International Patient Operations",
     heroEyebrow: "International Patient Operations Platform", heroTitle: "Manage the entire international patient journey on one platform.", heroLead: "From first contact to HBYS registration, VENDISYN connects sales, call center, medical opinion, pricing, proposals, payments and appointments around a single patient file.", heroCta: "Discover VENDISYN", heroContact: "Request a presentation",
     panelKicker: "How does VENDISYN achieve this?", panelTitle: "One patient. Every team. A seamless and traceable operation.", panelText: "A shared operational structure keeps information, responsibilities and decisions interconnected.", proof1: "Central Patient File", proof1t: "Authorized teams work simultaneously from the same patient data.", proof2: "Role-Based Work Lists", proof2t: "Each team sees only the work and pending tasks within its responsibility.", proof3: "Timeline and Audit Log", proof3t: "Every action, decision and hand-off between teams is recorded.", metric1: "Central Patient File", metric2: "Controlled workflow", metric3: "Complete audit trail",
     whatEyebrow: "What is VENDISYN?", whatTitle: "End-to-end digital transformation in international patient management.", whatText: "VENDISYN is an enterprise platform that enables hospitals to manage international patient operations from a single center. It standardizes the complete workflow—from marketing and candidate tracking to medical assessment, proposals, financial processes, appointment planning and Hospital Information Management System (HBYS) registration—within an integrated structure.", whatText2: "How It Differs from HBYS: VENDISYN is not an HBYS; it is the management center for the operational lifecycle leading up to the patient’s HBYS registration.", whatText3: "How It Differs from Traditional CRMs: VENDISYN goes beyond a standard CRM solution. It includes CRM capabilities while making the entire operation manageable and traceable from end to end.",
@@ -25,7 +25,7 @@ const translations = {
     footer: "International Patient Operations Platform", rights: "All rights reserved."
   },
   tr: {
-    navHome: "Ana Sayfa", navPlatform: "Platform", navHow: "Nasıl çalışır?", navContact: "İletişim", navTalk: "Bize ulaşın",
+    navHome: "Ana Sayfa", navPlatform: "Platform", navHow: "Nasıl çalışır?", navContact: "İletişim", navTalk: "Bize ulaşın", brandDescriptor: "Uluslararası Hasta Operasyonları",
     heroEyebrow: "International Patient Operations Platform", heroTitle: "Uluslararası hasta yolculuğunun tamamını tek platformda yönetin.", heroLead: "VENDISYN; ilk temastan HBYS kaydına kadar satış, çağrı merkezi, tıbbi görüş, fiyatlandırma, teklif, ödeme ve randevu süreçlerini tek hasta dosyası etrafında birleştirir.", heroCta: "VENDISYN’i keşfedin", heroContact: "Sunum talep edin",
     panelKicker: "VENDISYN bunu nasıl sağlar?", panelTitle: "Tek hasta. Tüm ekipler. Kesintisiz ve izlenebilir operasyon.", panelText: "Ortak operasyon yapısı; bilgiyi, sorumlulukları ve kararları birbiriyle bağlantılı tutar.", proof1: "Merkezi Hasta Dosyası", proof1t: "Yetkili ekipler, aynı hastanın verileri üzerinden eş zamanlı çalışır.", proof2: "Rol Bazlı İş Listeleri", proof2t: "Her ekip, yalnızca kendi sorumluluğundaki işleri ve bekleyen görevleri görür.", proof3: "Zaman Çizelgesi ve Denetim Kaydı", proof3t: "Yapılan her işlem, alınan her karar ve ekipler arası tüm geçişler kayıt altına alınır.", metric1: "Merkezi Hasta Dosyası", metric2: "Kontrollü iş akışı", metric3: "Eksiksiz denetim izi",
     whatEyebrow: "VENDISYN Nedir?", whatTitle: "Uluslararası hasta yönetiminde uçtan uca dijital dönüşüm.", whatText: "VENDISYN, hastanelerin uluslararası hasta operasyonlarını tek merkezden yönetmesini sağlayan kurumsal bir platformdur. Pazarlamadan aday takibine, tıbbi değerlendirmeden teklif ve finansal süreçlere, randevu planlamasından Hastane Bilgi Yönetim Sistemi (HBYS) kaydına kadar olan tüm iş akışını bütünleşik bir yapıda standartlaştırır.", whatText2: "HBYS’den Farkı: Bir HBYS yazılımı değil; hastanın HBYS’ye kaydolma aşamasına kadar geçen operasyonel yaşam döngüsünün yönetim merkezidir.", whatText3: "Geleneksel CRM’lerden Farkı: Standart bir CRM çözümünün ötesindedir. CRM modüllerini de kapsayarak operasyonun tamamını uçtan uca izlenebilir ve yönetilebilir hâle getirir.",
@@ -52,11 +52,11 @@ const fallbackLanguages = ["fr", "ar", "ru", "zh", "es"];
 fallbackLanguages.forEach(code => { translations[code] = { ...translations.en }; });
 
 const labels = {
-  fr: { navHome: "Accueil", navPlatform: "Plateforme", navHow: "Fonctionnement", navContact: "Contact", navTalk: "Nous contacter", contactMail: "Envoyer un e-mail", footer: "Plateforme d'opérations internationales des patients" },
-  ar: { navHome: "الرئيسية", navPlatform: "المنصة", navHow: "كيف تعمل", navContact: "اتصل بنا", navTalk: "تواصل معنا", contactMail: "إرسال بريد إلكتروني", footer: "منصة عمليات المرضى الدوليين" },
-  ru: { navHome: "Главная", navPlatform: "Платформа", navHow: "Как это работает", navContact: "Контакты", navTalk: "Связаться", contactMail: "Отправить письмо", footer: "Платформа международных пациентов" },
-  zh: { navHome: "首页", navPlatform: "平台", navHow: "运作方式", navContact: "联系我们", navTalk: "联系我们", contactMail: "发送电子邮件", footer: "国际患者运营平台" },
-  es: { navHome: "Inicio", navPlatform: "Plataforma", navHow: "Cómo funciona", navContact: "Contacto", navTalk: "Contactar", contactMail: "Enviar correo", footer: "Plataforma de operaciones de pacientes internacionales" }
+  fr: { navHome: "Accueil", navPlatform: "Plateforme", navHow: "Fonctionnement", navContact: "Contact", navTalk: "Nous contacter", contactMail: "Envoyer un e-mail", brandDescriptor: "Opérations internationales des patients", footer: "Plateforme d'opérations internationales des patients" },
+  ar: { navHome: "الرئيسية", navPlatform: "المنصة", navHow: "كيف تعمل", navContact: "اتصل بنا", navTalk: "تواصل معنا", contactMail: "إرسال بريد إلكتروني", brandDescriptor: "عمليات المرضى الدولية", footer: "منصة عمليات المرضى الدوليين" },
+  ru: { navHome: "Главная", navPlatform: "Платформа", navHow: "Как это работает", navContact: "Контакты", navTalk: "Связаться", contactMail: "Отправить письмо", brandDescriptor: "Международные операции с пациентами", footer: "Платформа международных пациентов" },
+  zh: { navHome: "首页", navPlatform: "平台", navHow: "运作方式", navContact: "联系我们", navTalk: "联系我们", contactMail: "发送电子邮件", brandDescriptor: "国际患者运营", footer: "国际患者运营平台" },
+  es: { navHome: "Inicio", navPlatform: "Plataforma", navHow: "Cómo funciona", navContact: "Contacto", navTalk: "Contactar", contactMail: "Enviar correo", brandDescriptor: "Operaciones internacionales de pacientes", footer: "Plataforma de operaciones de pacientes internacionales" }
 };
 Object.entries(labels).forEach(([code, value]) => Object.assign(translations[code], value));
 
@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const label = brand.querySelector("span");
     if (label) {
       label.className = "brand-copy";
-      label.innerHTML = "<strong>VENDISYN</strong><small>International Patient Operations</small>";
+      label.innerHTML = '<strong>VENDISYN</strong><small class="brand-descriptor"><span data-i18n="brandDescriptor">International Patient Operations</span><span class="ai-signature" dir="ltr"><span class="ai-star" aria-hidden="true">✦&nbsp;</span><em class="ai-text">AI</em><span class="native-text">-Native</span></span></small>';
     }
   });
   if (location.pathname.endsWith("platform.html") && !document.querySelector(".product-access")) {
