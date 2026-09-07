@@ -228,6 +228,88 @@ Object.assign(translations.ar, uniqueFeatureTranslations.ar);
 Object.assign(translations.zh, uniqueFeatureTranslations.zh);
 Object.assign(translations.es, uniqueFeatureTranslations.es);
 
+const homeAiTranslations = {
+  en: {
+    homeAiTitle: "AI-Native Patient Acquisition",
+    homeAiText: "VENDISYN uses specialized decision-support capabilities throughout the international patient journey to analyze Leads, prioritize opportunities, understand Patient Files, evaluate advertising outcomes and supervise acquisition operations.",
+    homeAiLeadTitle: "AI Lead Analysis", homeAiLeadText: "Explainable Lead signals and priorities help sales teams focus their time.",
+    homeAiFileTitle: "AI Patient File Analysis", homeAiFileText: "Structured context helps authorized teams review complex Patient Files faster.",
+    homeAiAdsTitle: "AI Advertising Analysis", homeAiAdsText: "Campaign activity connects with Lead quality and verified sales outcomes.",
+    homeAiSupervisorText: "Delays, unattended work and opportunities become visible to authorized managers.",
+    homeAiAgentText: "Operational summaries and guidance help employees reach relevant context faster.",
+    homeAiCallingTitle: "AI Robotic Calling", homeAiCallingText: "Controlled outbound workflows support eligible overflow and recovery Lead pools.",
+    homeAiCta: "Explore VENDISYN AI"
+  },
+  tr: {
+    homeAiTitle: "AI-Native Hasta Kazanımı",
+    homeAiText: "VENDISYN; uluslararası hasta yolculuğu boyunca Lead'leri analiz etmek, fırsatları önceliklendirmek, Patient File içeriğini anlamlandırmak, reklam sonuçlarını değerlendirmek ve hasta kazanım operasyonlarını denetlemek için uzmanlaşmış AI karar desteği yetenekleri kullanır.",
+    homeAiLeadTitle: "AI Lead Analizi", homeAiLeadText: "Açıklanabilir Lead sinyalleri ve öncelikleri, satış ekiplerinin zamanını doğru fırsatlara yönlendirmesine yardımcı olur.",
+    homeAiFileTitle: "AI Hasta Dosyası Analizi", homeAiFileText: "Yapılandırılmış bağlam, yetkili ekiplerin karmaşık Patient File kayıtlarını daha hızlı değerlendirmesini sağlar.",
+    homeAiAdsTitle: "AI Reklam Analizi", homeAiAdsText: "Campaign ve Advertisement faaliyetleri Lead kalitesi ve doğrulanmış satış sonuçlarıyla ilişkilendirilir.",
+    homeAiSupervisorText: "Gecikmeler, takip edilmeyen işler ve satış fırsatları yetkili yöneticiler için görünür hâle gelir.",
+    homeAiAgentText: "Operasyonel özetler ve yönlendirmeler çalışanların ilgili bağlama daha hızlı ulaşmasına yardımcı olur.",
+    homeAiCallingTitle: "AI Robotik Arama", homeAiCallingText: "Kontrollü outbound akışlar, uygun yüksek hacimli ve Yeniden Kazanım Havuzlarını destekler.",
+    homeAiCta: "VENDISYN AI'ı Keşfedin"
+  },
+  fr: {
+    homeAiTitle: "Acquisition de patients AI-Native",
+    homeAiText: "VENDISYN utilise des capacités spécialisées d’aide à la décision par IA pour analyser les Leads, prioriser les opportunités, comprendre les Patient Files, évaluer les résultats publicitaires et superviser les opérations d’acquisition.",
+    homeAiLeadTitle: "Analyse IA des Leads", homeAiLeadText: "Des signaux et priorités explicables aident les équipes commerciales à concentrer leur temps.",
+    homeAiFileTitle: "Analyse IA du Patient File", homeAiFileText: "Un contexte structuré permet aux équipes autorisées d’évaluer plus rapidement les dossiers complexes.",
+    homeAiAdsTitle: "Analyse IA de la publicité", homeAiAdsText: "Les Campaigns et Advertisements sont reliées à la qualité des Leads et aux ventes vérifiées.",
+    homeAiSupervisorText: "Les retards, travaux non suivis et opportunités deviennent visibles pour les responsables autorisés.",
+    homeAiAgentText: "Les résumés et recommandations opérationnels accélèrent l’accès au contexte pertinent.",
+    homeAiCallingTitle: "Appels robotiques IA", homeAiCallingText: "Des flux sortants contrôlés prennent en charge les pools éligibles à fort volume et de récupération.",
+    homeAiCta: "Découvrir VENDISYN AI"
+  },
+  ru: {
+    homeAiTitle: "AI-Native привлечение пациентов",
+    homeAiText: "VENDISYN применяет специализированную поддержку решений на основе ИИ для анализа Leads, приоритизации возможностей, понимания Patient Files, оценки рекламы и контроля операций привлечения пациентов.",
+    homeAiLeadTitle: "AI-анализ Leads", homeAiLeadText: "Объяснимые сигналы и приоритеты помогают отделам продаж сосредоточить время на нужных возможностях.",
+    homeAiFileTitle: "AI-анализ Patient File", homeAiFileText: "Структурированный контекст ускоряет оценку сложных Patient Files уполномоченными командами.",
+    homeAiAdsTitle: "AI-анализ рекламы", homeAiAdsText: "Campaigns и Advertisements связываются с качеством Leads и подтвержденными продажами.",
+    homeAiSupervisorText: "Задержки, оставленная без внимания работа и возможности становятся видимыми руководителям.",
+    homeAiAgentText: "Операционные сводки и рекомендации ускоряют доступ сотрудников к нужному контексту.",
+    homeAiCallingTitle: "AI Роботизированные звонки", homeAiCallingText: "Управляемые исходящие потоки поддерживают подходящие пулы высокой нагрузки и восстановления.",
+    homeAiCta: "Узнать больше о VENDISYN AI"
+  },
+  ar: {
+    homeAiTitle: "استقطاب المرضى بمنهج AI-Native",
+    homeAiText: "تستخدم VENDISYN قدرات متخصصة لدعم القرار بالذكاء الاصطناعي لتحليل Leads وترتيب الفرص وفهم Patient Files وتقييم نتائج الإعلان والإشراف على عمليات استقطاب المرضى.",
+    homeAiLeadTitle: "تحليل Leads بالذكاء الاصطناعي", homeAiLeadText: "تساعد الإشارات والأولويات القابلة للتفسير فرق المبيعات على توجيه وقتها إلى الفرص المناسبة.",
+    homeAiFileTitle: "تحليل Patient File بالذكاء الاصطناعي", homeAiFileText: "يساعد السياق المنظم الفرق المخولة على تقييم Patient Files المعقدة بسرعة أكبر.",
+    homeAiAdsTitle: "تحليل الإعلانات بالذكاء الاصطناعي", homeAiAdsText: "ترتبط Campaigns وAdvertisements بجودة Leads ونتائج المبيعات الموثقة.",
+    homeAiSupervisorText: "تصبح التأخيرات والأعمال غير المتابعة وفرص المبيعات مرئية للمديرين المخولين.",
+    homeAiAgentText: "تساعد الملخصات والتوجيهات التشغيلية الموظفين على الوصول إلى السياق المناسب بسرعة.",
+    homeAiCallingTitle: "الاتصال الروبوتي بالذكاء الاصطناعي", homeAiCallingText: "تدعم التدفقات الصادرة المنضبطة مجموعات الحجم الكبير والاستعادة المؤهلة.",
+    homeAiCta: "اكتشف VENDISYN AI"
+  },
+  zh: {
+    homeAiTitle: "AI-Native患者获取",
+    homeAiText: "VENDISYN在国际患者旅程中运用专业AI决策支持能力，分析Leads、排序机会、理解Patient Files、评估广告结果并监督患者获取运营。",
+    homeAiLeadTitle: "AI Lead分析", homeAiLeadText: "可解释的Lead信号和优先级帮助销售团队将时间集中在正确的机会。",
+    homeAiFileTitle: "AI Patient File分析", homeAiFileText: "结构化语境帮助授权团队更快评估复杂的Patient Files。",
+    homeAiAdsTitle: "AI广告分析", homeAiAdsText: "Campaign和Advertisement活动与Lead质量及已验证销售结果相连接。",
+    homeAiSupervisorText: "延误、无人跟进的工作和销售机会对授权管理者清晰可见。",
+    homeAiAgentText: "运营摘要和指导帮助员工更快找到相关语境。",
+    homeAiCallingTitle: "AI机器人呼叫", homeAiCallingText: "受控外呼流程支持符合条件的大规模及重新获取Lead池。",
+    homeAiCta: "探索VENDISYN AI"
+  },
+  es: {
+    homeAiTitle: "Captación de pacientes AI-Native",
+    homeAiText: "VENDISYN utiliza capacidades especializadas de apoyo a decisiones con IA para analizar Leads, priorizar oportunidades, comprender Patient Files, evaluar resultados publicitarios y supervisar las operaciones de captación.",
+    homeAiLeadTitle: "Análisis IA de Leads", homeAiLeadText: "Las señales y prioridades explicables ayudan a los equipos comerciales a concentrar su tiempo.",
+    homeAiFileTitle: "Análisis IA de Patient File", homeAiFileText: "El contexto estructurado permite a los equipos autorizados evaluar más rápido los Patient Files complejos.",
+    homeAiAdsTitle: "Análisis IA de publicidad", homeAiAdsText: "Las Campaigns y Advertisements se conectan con la calidad de Leads y las ventas verificadas.",
+    homeAiSupervisorText: "Los retrasos, trabajos sin seguimiento y oportunidades se hacen visibles para responsables autorizados.",
+    homeAiAgentText: "Los resúmenes y recomendaciones operativas agilizan el acceso al contexto relevante.",
+    homeAiCallingTitle: "Llamadas robóticas IA", homeAiCallingText: "Los flujos salientes controlados apoyan pools elegibles de alto volumen y recuperación.",
+    homeAiCta: "Explorar VENDISYN AI"
+  }
+};
+
+Object.entries(homeAiTranslations).forEach(([code, values]) => Object.assign(translations[code], values));
+
 function applyLanguage(language) {
   const selected = translations[language] ? language : "en";
   const dictionary = translations[selected];
@@ -246,6 +328,8 @@ function applyLanguage(language) {
     image.src = `assets/product-screens/${image.dataset.productScreen}-${productLanguage}-safe.png`;
   });
   document.querySelectorAll("[data-language]").forEach(select => { select.value = selected; });
+  const aiLanguageUrls = { en: "ai-powered-patient-acquisition.html", tr: "tr/ai-powered-patient-acquisition.html", fr: "fr/ai-powered-patient-acquisition.html", ar: "ar/ai-powered-patient-acquisition.html", ru: "ru/ai-powered-patient-acquisition.html", zh: "zh/ai-powered-patient-acquisition.html", es: "es/ai-powered-patient-acquisition.html" };
+  document.querySelectorAll("[data-ai-home-link]").forEach(link => { link.href = aiLanguageUrls[selected] || aiLanguageUrls.en; });
   localStorage.setItem("vendisyn-language", selected);
 }
 
