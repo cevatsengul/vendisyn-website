@@ -26,6 +26,7 @@
 .ai-map strong { color: white; background: var(--ink); }
 .ai-map b { color: var(--blue); line-height: 1; }
 .ai-capability-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.localized-ai-page .ai-capability-grid { grid-template-columns: repeat(2, 1fr); }
 .ai-capability-grid .card { display: flex; flex-direction: column; }
 .ai-capability-grid small { display: block; margin-top: auto; padding-top: 18px; color: var(--blue-dark); font-weight: 700; }
 .ai-workflow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; counter-reset: ai-flow; }
