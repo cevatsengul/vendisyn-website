@@ -255,7 +255,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const howLink = menu.querySelector('a[href="how-it-works.html"]');
       const aiLink = document.createElement("a");
       aiLink.href = "ai-powered-patient-acquisition.html";
-      aiLink.textContent = "VENDISYN AI";
+      aiLink.innerHTML = 'VENDISYN <em class="nav-ai-label">AI</em>';
       if (howLink) menu.insertBefore(aiLink, howLink);
       else menu.appendChild(aiLink);
     }
