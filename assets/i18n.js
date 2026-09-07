@@ -250,8 +250,18 @@ function applyLanguage(language) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("[data-menu]").forEach(menu => {
+    if (!menu.querySelector('a[href="ai-powered-patient-acquisition.html"]')) {
+      const howLink = menu.querySelector('a[href="how-it-works.html"]');
+      const aiLink = document.createElement("a");
+      aiLink.href = "ai-powered-patient-acquisition.html";
+      aiLink.textContent = "VENDISYN AI";
+      if (howLink) menu.insertBefore(aiLink, howLink);
+      else menu.appendChild(aiLink);
+    }
+  });
   document.querySelectorAll(".footer-links").forEach(footerLinks => {
-    footerLinks.innerHTML = '<a href="contact.html" data-i18n="navContact">Contact</a>';
+    footerLinks.innerHTML = '<a href="ai-powered-patient-acquisition.html">VENDISYN AI</a><a href="contact.html" data-i18n="navContact">Contact</a>';
   });
   document.querySelectorAll(".brand").forEach(brand => {
     const logo = brand.querySelector("img");
@@ -296,7 +306,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (channelItems[1]) channelItems[1].dataset.i18n = "channelWhatsApp";
     if (channelItems[2]) channelItems[2].dataset.i18n = "channelSms";
   }
-  const initial = localStorage.getItem("vendisyn-language") || "en";
+  const initial = document.body.classList.contains("ai-page") ? "en" : (localStorage.getItem("vendisyn-language") || "en");
   applyLanguage(initial);
   document.querySelectorAll("[data-language]").forEach(select => select.addEventListener("change", event => applyLanguage(event.target.value)));
   const menuButton = document.querySelector("[data-menu-button]");

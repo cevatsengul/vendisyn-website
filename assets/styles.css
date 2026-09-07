@@ -12,6 +12,51 @@
   --max: 1180px;
 }
 
+/* VENDISYN AI sales page */
+.breadcrumb { padding-top: 22px; }
+.breadcrumb ol { display: flex; gap: 10px; margin: 0; padding: 0; list-style: none; color: var(--muted); font-size: 13px; }
+.breadcrumb li + li::before { content: "/"; margin-right: 10px; color: #9eb4c2; }
+.breadcrumb a:hover { color: var(--blue-dark); }
+.ai-hero { position: relative; overflow: hidden; padding: 56px 0 86px; background: radial-gradient(circle at 85% 20%, rgba(117,197,217,.28), transparent 35%), linear-gradient(145deg, #f7fbfc 0%, #e8f6f8 55%, #fff 100%); }
+.ai-hero-grid { display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; gap: 72px; }
+.ai-hero h1 { max-width: 760px; margin: 0 0 22px; font-size: clamp(42px, 6vw, 72px); line-height: 1.03; letter-spacing: -.045em; }
+.ai-principle { margin: 26px 0 0; color: var(--blue-dark); font-size: 19px; font-weight: 800; }
+.ai-map { display: grid; gap: 8px; padding: 28px; border: 1px solid rgba(47,131,168,.2); border-radius: var(--radius); background: rgba(255,255,255,.88); box-shadow: var(--shadow); text-align: center; }
+.ai-map span, .ai-map strong { padding: 12px 14px; border-radius: 12px; background: var(--pale); }
+.ai-map strong { color: white; background: var(--ink); }
+.ai-map b { color: var(--blue); line-height: 1; }
+.ai-capability-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.ai-capability-grid .card { display: flex; flex-direction: column; }
+.ai-capability-grid small { display: block; margin-top: auto; padding-top: 18px; color: var(--blue-dark); font-weight: 700; }
+.ai-workflow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; counter-reset: ai-flow; }
+.ai-workflow div { min-height: 148px; padding: 24px 20px; border: 1px solid var(--line); border-radius: 16px; background: white; }
+.ai-workflow div::before { counter-increment: ai-flow; content: counter(ai-flow, decimal-leading-zero); display: block; margin-bottom: 12px; color: var(--blue); font-size: 12px; font-weight: 800; letter-spacing: .1em; }
+.ai-workflow strong, .ai-workflow span { display: block; }
+.ai-workflow span { margin-top: 8px; color: var(--muted); font-size: 14px; }
+.closed-loop { display: flex; justify-content: space-between; gap: 24px; margin-top: 20px; padding: 24px; border-radius: 16px; color: white; background: var(--ink); }
+.closed-loop span { color: #cfe8ef; }
+.human-ai { display: grid; grid-template-columns: .85fr 1.15fr; gap: 70px; align-items: start; }
+.human-ai-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.human-ai-columns article { padding: 26px; border: 1px solid var(--line); border-radius: 18px; background: var(--pale); }
+.entity-answers .card h3 { margin-top: 0; }
+.faq { max-width: 920px; }
+.faq details { border-top: 1px solid var(--line); }
+.faq details:last-child { border-bottom: 1px solid var(--line); }
+.faq summary { padding: 20px 34px 20px 0; cursor: pointer; font-weight: 800; }
+.faq details p { margin: -5px 0 22px; color: var(--muted); }
+
+@media (max-width: 900px) {
+  .ai-hero-grid, .human-ai { grid-template-columns: 1fr; gap: 40px; }
+  .ai-capability-grid { grid-template-columns: repeat(2, 1fr); }
+  .ai-workflow { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 620px) {
+  .ai-hero { padding: 42px 0 62px; }
+  .ai-capability-grid, .ai-workflow, .human-ai-columns { grid-template-columns: 1fr; }
+  .closed-loop { flex-direction: column; }
+}
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
